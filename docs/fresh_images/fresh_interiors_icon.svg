@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="33.851791pt"
+   height="25.516663pt"
+   viewBox="0 0 33.851793 25.516664"
+   id="svg32"
+   sodipodi:docname="Fresh_Interiors_Logo-2home-sm.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showguides="true"
+     inkscape:zoom="7.7877292"
+     inkscape:cx="67.927375"
+     inkscape:cy="16.949742"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer-1">
+    <sodipodi:guide
+       position="134.15342,78.821601"
+       orientation="0,-1"
+       id="guide4"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs32" />
+  <g
+     enable-background="new"
+     id="g32"
+     transform="matrix(0.0553727,0,0,0.0553727,-29.985056,-102.60138)">
+    <g
+       id="Layer-1"
+       data-name="Layer 1"
+       inkscape:label="Layer-1"
+       style="display:inline">
+      <path
+         d="m 0,0 h -9.18 l 0.01,76.67 -80.235,55.301 v 10.614 L 0.042,80.56 0.084,80.621 Z m -11.475,0 h -9.158 l 10e-4,71.645 -68.773,47.865 v 9.681 l 77.941,-53.677 z m -0.001,-8.257 -9.157,-0.003 v 5.965 h 9.158 z M -22.927,0 h -169.636 v 80.941 l 9.167,6.563 V 7.627 h 10e-4 V 7.558 h 36.681 v 2.476 h -0.001 v 103.727 l 9.168,6.562 V 48.925 48.908 h 25.217 v 0.017 h 0.001 v 83.745 l 9.168,-6.381 V 10.034 7.558 h 68.773 2.294 v 2.476 66.791 l 9.167,-6.38 z m 0,-8.261 -169.636,-0.055 v 6.021 h 169.636 z m 0,-8.371 h -169.636 v 6.022 l 169.636,0.055 z m -158.174,105.778 9.168,6.563 V 10.034 h -9.168 z m 11.462,8.205 9.168,6.563 v -93.88 h -9.168 z m 11.462,8.205 9.168,6.563 V 10.034 h -9.168 z m 22.924,16.41 9.168,6.563 V 51.385 h -9.168 z m 34.386,2.726 9.168,-6.38 V 10.034 h -9.168 z m 0,12.393 9.168,-6.313 v -9.665 l -9.168,6.38 z m 22.925,-28.349 9.184,-6.392 h -0.017 v -92.31 h -9.167 z m 11.461,-7.977 9.168,-6.381 V 10.034 h -9.168 z m 11.463,-7.978 9.201,-6.405 h -0.034 V 10.034 h -9.167 z m 11.461,-7.978 9.169,-6.381 V 10.034 h -9.169 z m -45.848,31.911 9.168,-6.381 V 10.034 h -9.168 z M -194.857,0 h -9.168 v 72.736 l 9.168,6.563 z m 0,-8.316 h -9.16699 v 6.021 h 9.16699 z M -206.319,0 h -9.168 v 64.531 l 9.168,6.563 z M 0.087,83.32 -91.699,146.968 v -2.254 -0.538 -10.624 l -11.462,7.9 v -2.787 -9.581 l -11.463,7.978 v -2.795 -82.882 h -9.167 v 78.786 1.35 1.696 l -94.001,-67.29 0.035,-0.048 h -0.024 V 0 -0.627 -2.295 h 11.462 v -8.237 h 0.094 v -0.078 h 11.368 v -8.177 h 0.188 v -0.139 h 171.742 2.294 v 8.372 l 11.451,0.003 0.001,8.256 h 9.179 V -2.302 H 2.292 V -2.295 0 81.82 Z"
+         id="path1"
+         style="display:inline"
+         transform="matrix(2.7777777,0,0,-2.7777777,1146.4911,2261.168)" />
+      <clipPath
+         id="cp0">
+        <path
+           transform="matrix(2.7777777,0,0,-2.7777777,0,4166.6667)"
+           d="M 0,1500 H 1500 V 0 H 0 Z"
+           id="path3" />
+      </clipPath>
+      <g
+         clip-path="url(#cp0)"
+         id="g31"
+         style="display:inline" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer1"
+       inkscape:label="Layer 1"
+       style="display:none" />
+  </g>
+</svg>
