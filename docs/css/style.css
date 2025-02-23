@@ -6312,6 +6312,15 @@ p.intro{
 	line-height:1.7em;
 }
 
+div.redirect-div {
+	padding-left: 20px;
+}
+p.redirect{
+	font-size:22px;
+	font-weight:500;
+	line-height:1.7em;
+}
+
 .table-bordered, .table-bordered td{
 border:solid 1px #404040;
 }
