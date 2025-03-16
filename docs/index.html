@@ -837,6 +837,8 @@
             <!-- section close -->
 
             <!-- section begin -->
+
+
             <section id="section-contact" class="no-bottom">
                 <div class="container">
                     <div class="row">
@@ -847,39 +849,47 @@
                         </div>
 
                         <div class="col-md-8 wow fadeInLeft">
-                            <form name="contactForm" id='contact_form' method="post" action='http://www.redmondstaging.com/email.php'>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div id='name_error' class='error'>Please enter your name.</div>
-                                        <div>
-                                            <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
+
+                            <form name="contactForm" id='contact_form' action="https://api.web3forms.com/submit" method="POST">
+                                <fieldset>
+                                    <input type="hidden" name="access_key" value="e2b8df19-b217-4932-8180-637fbcfdf7a2" />
+                                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div id='name_error' class='error'>Please enter your name.</div>
+                                            <div>
+                                                <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
+                                            </div>
+
+                                            <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
+                                            <div>
+                                                <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
+                                            </div>
+
+                                            <div id='phone_error' class='error'>Please enter your phone number.</div>
+                                            <div>
+                                                <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div id='message_error' class='error'>Please enter your message.</div>
+                                            <div>
+                                                <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
+                                            </div>
                                         </div>
 
-                                        <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
-                                        <div>
-                                            <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
-                                        </div>
-
-                                        <div id='phone_error' class='error'>Please enter your phone number.</div>
-                                        <div>
-                                            <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div id='message_error' class='error'>Please enter your message.</div>
-                                        <div>
-                                            <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
+                                        <div class="col-md-12">
+                                            <p id='submit'>
+                                                <input type='submit' id='send_message' value='Submit Form' class="btn btn-line">
+                                            </p>
+                                            <!-- <div id="result"></div>
+                                            <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                            <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div> -->
                                         </div>
                                     </div>
-
-                                    <div class="col-md-12">
-                                        <p id='submit'>
-                                            <input type='submit' id='send_message' value='Submit Form' class="btn btn-line">
-                                        </p>
-                                        <div id='mail_success' class='success'>Your message has been sent successfully.</div>
-                                        <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
-                                    </div>
-                                </div>
+                                </fieldset>
                             </form>
                         </div>
 
@@ -1022,65 +1032,54 @@
         });
         </script>
 
-<script>
-    $(document).ready(function() {
-        $('#contact_form').on('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
+    <!-- <script>
+        const form = document.getElementById("contact_form");
+        const result = document.getElementById("result");
 
-            // Hide all error messages
-            $('.error').hide();
-
-            // Collect form data
-            var formData = {
-                name: $('#name').val(),
-                email: $('#email').val(),
-                phone: $('#phone').val(),
-                message: $('#message').val()
-            };
-
-            // Validate form data
-            var isValid = true;
-            if (!formData.name) {
-                $('#name_error').show();
-                isValid = false;
-            }
-            if (!formData.email) {
-                $('#email_error').show();
-                isValid = false;
-            }
-            if (!formData.phone) {
-                $('#phone_error').show();
-                isValid = false;
-            }
-            if (!formData.message) {
-                $('#message_error').show();
-                isValid = false;
-            }
-
-            if (isValid) {
-                // Send form data using AJAX
-                $.ajax({
-                    url: 'http://www.redmondstaging.com/email.php',
-                    type: 'POST',
-                    data: formData,
-                    success: function(response) {
-                        if (response.trim() === 'sent') {
-                            $('#mail_success').show();
-                            $('#mail_fail').hide();
-                        } else {
-                            $('#mail_success').hide();
-                            $('#mail_fail').text('Sorry, error occurred this time sending your message.').show();
-                        }
-                    },
-                    error: function(jqXHR, textStatus, errorThrown) {
-                        $('#mail_success').hide();
-                        $('#mail_fail').text('Sorry, error occurred this time sending your message: ' + errorThrown).show();
-                    }
-                });
-            }
+        form.addEventListener("submit", function (e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+        var object = {};
+        formData.forEach((value, key) => {
+            object[key] = value;
         });
-    });
-</script>
+        var json = JSON.stringify(object);
+        result.innerHTML = "Please wait...";
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+            },
+            body: json
+        })
+            .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("success");
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("error");
+            }
+            })
+            .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+            })
+            .then(function () {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 10000);
+            });
+        });
+
+    </script> -->
 </body>
 
 </html>
