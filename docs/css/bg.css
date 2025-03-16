@@ -24,11 +24,39 @@ background:url(../images/background/subheader.jpg)top fixed;
 .page-shop #subheader{background-image:url(../images/background/subheader-5.jpg);}
 .page-contact #subheader{background-image:url(../images/background/subheader-6.jpg);}
 
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh; /* Adjust the height as needed */
+	overflow: hidden;
+	position: relative;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	will-change: transform;
+}
+
+
 /* background settings for section */
 #info-address{background:url(../images/background/bg-3.jpg) top fixed;}
 #view-all-projects, #call-to-action{padding:60px 0 60px 0;}
 #section-about-us-2{background:#f8f8f8; height:100%;}
-#section-about-us-2 .image-container{background:url(../fresh_images/profile-photo.jpg)}
+#section-about-us-2 .image-container {
+    width: 40vh;
+    overflow: hidden;
+}
+#section-about-us-2 .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 #section-redirection .image-container{background:url(../fresh_images/redirect-square.jpg);}
 #section-about-us-3{background:#f5f5f5; height:100%;}
 #section-about-us-3 .image-container{background:url(../images/background/bg-side-2.jpg);}
@@ -41,7 +69,8 @@ background:url(../images/background/subheader.jpg)top fixed;
 #bg-coming-soon-page{background:url(../images/background/bg-6.jpg) top fixed; position:fixed; min-height:100%; width:100%;}
 #section-about-us-2{background:#18191b; height:100%;}
 .de_light #section-about-us-2{background:none;}
-#section-welcome{background:url(../fresh_images/gallery/0B.jpg) top fixed;} /*background/bg-1.jpg) top fixed;}*/
+#section-welcome{background:url(../fresh_images/main-photo.jpg) top fixed;} /*background/bg-1.jpg) top fixed;}*/
+#section-goodbye{background:url(../fresh_images/dw\ living\ room.jpg) top fixed;} /*background/bg-1.jpg) top fixed;}*/
 #section-welcome-2{background:url(../images/background/bg-6.jpg) top fixed;}
 #section-welcome-3{background:url(../images/background/bg-7.jpg) top fixed;}
 #section-welcome-4{background:url(../images/background/bg-10.jpg) top fixed;}
