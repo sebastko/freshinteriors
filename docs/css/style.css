@@ -6311,6 +6311,13 @@ p.intro{
 	font-weight:500;
 	line-height:1.7em;
 }
+p.intro{
+	text-indent: 2em;
+	text-align: justify;
+}
+p.quote{
+	font-style:italic;
+}
 
 div.redirect-div {
 	padding-left: 20px;

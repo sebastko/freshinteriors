@@ -28,7 +28,7 @@ background:url(../images/background/subheader.jpg)top fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 40vh; /* Adjust the height as needed */
+	height: 60vh; /* Adjust the height as needed */
 	overflow: hidden;
 	position: relative;
 }
