@@ -9583,6 +9583,7 @@ right:-15px;
 .owl-theme .owl-dots .owl-dot span{
 	width:4px;
 	height:4px;
+	zoom: 3;
 }
 
 #photo-carousel .owl-dots{

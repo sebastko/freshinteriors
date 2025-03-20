@@ -560,6 +560,31 @@ jQuery(document).ready(function () {
             }
     });
 	
+	jQuery("#gallery-carousel-1").owlCarousel({
+        center: false,
+			items:1,
+			loop:false,
+			dots: true,
+			margin:10,
+            
+            // smartSpeed: 200,
+            // slideSpeed: 500,
+            // slideBy: 1,
+            // responsiveRefreshRate: 100,
+
+			responsive:{
+				1000:{
+					items:3
+				},
+				600:{
+					items:3
+				},
+				0:{
+					items:3
+				}
+			}
+    });
+	
 	jQuery("#gallery-carousel-2").owlCarousel({
         center: false,
 			items:2,
